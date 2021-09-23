@@ -14,7 +14,8 @@ spec:
       value: https://github.com/HendrikJLoe/hendrik-e2e-app
     - name: image-repo
       value: quay.io/hendrik_loeffel/e2e-assignment
-  
+    - name: app-name
+      value: hendrik-e2e-assignment
   workspaces:
     - name: pipeline-shared-data
       volumeClaimTemplate:

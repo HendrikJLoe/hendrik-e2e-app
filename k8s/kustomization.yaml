@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- deployment.yaml
+- service.yaml
+- route.yaml
+commonLabels:
+  app: hendrik-e2e-assignment
+  app.kubernetes.io/instance: hendrik-e2e-assignment-instance
+  app.kubernetes.io/name: hendrik-e2e-assignment
+images:
+- name: quay.io/upslopeio/express-sample-app
+  newName: quay.io/hendrik_loeffel/hendrik-e2e-assignment
+  newTag: eb4ab1eae911b6fabca0775122a2af826d138a60a04564251c9846540a09d768
