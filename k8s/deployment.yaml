@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: express-sample-app
+  name: hendrik-e2e-assignment
 spec:
   replicas: 1
   selector:

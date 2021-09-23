@@ -6,8 +6,9 @@ resources:
 - route.yaml
 commonLabels:
   app: hendrik-e2e-assignment
-  app.kubernetes.io/instance: hendrik-e2e-assignment-instance
-  app.kubernetes.io/name: hendrik-e2e-assignment
+  app.kubernetes.io/instance: 'hendrik-e2e-assignment-instance'
+  app.kubernetes.io/name: 'hendrik-e2e-assignment'
+  
 images:
 - name: quay.io/upslopeio/express-sample-app
   newName: quay.io/hendrik_loeffel/hendrik-e2e-assignment
