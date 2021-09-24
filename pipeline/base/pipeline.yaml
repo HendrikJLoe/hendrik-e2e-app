@@ -10,6 +10,10 @@ spec:
     - name: source-repo
       type: string
       description: Source code repository
+    - name: sha                  # support new param
+      type: string
+      description: Precise SHA of the commit to build
+      default: ""
     - name: image-repo
       type: string
       description: Docker image repository

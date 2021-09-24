@@ -3,12 +3,9 @@ kind: PipelineRun
 metadata:
   generateName: hendrik-e2e-assignment-
 spec:
-  
   pipelineRef:
     name: nodejs-pipeline
-  
   serviceAccountName: build-bot
-  
   params:
     - name: source-repo
       value: https://github.com/HendrikJLoe/hendrik-e2e-app
