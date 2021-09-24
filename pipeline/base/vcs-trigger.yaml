@@ -78,7 +78,7 @@ spec:
 #hello world
 #second line
 #second line
-#third line
+
 ---
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerBinding
