@@ -86,3 +86,16 @@ spec:
       workspaces:
         - name: source
           workspace: pipeline-shared-data
+    - name: update-prod-config
+      runAfter:
+        - try-to-deploy
+      taskRef:
+        name: commit-manifest
+      params:
+        - name: app-name
+          value: "$(params.app-name)"
+        - name: sha
+          value: "$(tasks.clone-repository.results.commit)"
+      workspaces:
+        - name: source
+          workspace: pipeline-shared-data
