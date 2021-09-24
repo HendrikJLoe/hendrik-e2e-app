@@ -76,6 +76,7 @@ spec:
                   requests:
                     storage: 1Gi
 #hello world
+#second line
 ---
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerBinding
